@@ -1,5 +1,5 @@
 ﻿using System;
-namespace simple_note.Auth
+namespace simple_note.Modules.Auth
 {
     public class LoginDto
     {

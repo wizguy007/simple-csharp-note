@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace simple_note.Note
+namespace simple_note.Modules.Note
 {
     public class NoteRepository : INoteRepository
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace simple_note.Note
+namespace simple_note.Modules.Note
 {
     public class NoteDto
     {

@@ -6,18 +6,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="User\" />
-    <None Remove="Note\" />
-    <None Remove="Auth\" />
     <None Remove="Middlewares\" />
     <None Remove="Guards\" />
+    <None Remove="Modules\" />
+    <None Remove="Modules\Auth\" />
+    <None Remove="Modules\User\" />
+    <None Remove="Modules\Note\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="User\" />
-    <Folder Include="Note\" />
-    <Folder Include="Auth\" />
     <Folder Include="Middlewares\" />
     <Folder Include="Guards\" />
+    <Folder Include="Modules\" />
+    <Folder Include="Modules\Auth\" />
+    <Folder Include="Modules\User\" />
+    <Folder Include="Modules\Note\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />

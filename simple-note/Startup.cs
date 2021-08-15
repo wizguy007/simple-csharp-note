@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using simple_note.Auth;
+using simple_note.Modules.Auth;
 using simple_note.Middlewares;
-using simple_note.Note;
-using simple_note.User;
+using simple_note.Modules.Note;
+using simple_note.Modules.User;
 
 namespace simple_note
 {

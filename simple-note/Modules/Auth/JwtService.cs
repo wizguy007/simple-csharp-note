@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace simple_note.Auth
+namespace simple_note.Modules.Auth
 {
     public class JwtService
     {

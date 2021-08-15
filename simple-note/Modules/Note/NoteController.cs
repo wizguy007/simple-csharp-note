@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using simple_note.Guards;
-using simple_note.User;
+using simple_note.Modules.User;
 
-namespace simple_note.Note
+namespace simple_note.Modules.Note
 {
     [Route("/api/notes")]
     [ApiController]

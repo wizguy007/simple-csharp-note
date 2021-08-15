@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
-using simple_note.Auth;
-using simple_note.User;
+using simple_note.Modules.Auth;
+using simple_note.Modules.User;
 
 namespace simple_note.Middlewares
 {

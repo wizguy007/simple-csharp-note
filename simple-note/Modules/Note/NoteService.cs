@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Web;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
-using simple_note.User;
+using simple_note.Modules.User;
 
-namespace simple_note.Note
+namespace simple_note.Modules.Note
 {
     public class NoteService
     {
@@ -38,7 +39,10 @@ namespace simple_note.Note
         {
             var note = _noteRepository.FindById(id);
 
-            if (note == null || note?.UserId != user.Id) throw new HttpRequestException("Resource not found", new Exception(), HttpStatusCode.NotFound);
+            if (note == null || note?.UserId != user.Id)
+            {
+                throw new HttpRequestException("Resource not found", null, HttpStatusCode.NotFound);
+            }
             
             return note;
         }

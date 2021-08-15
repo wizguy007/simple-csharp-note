@@ -4,10 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using simple_note.Guards;
-using simple_note.User;
+using simple_note.Modules.User;
 
 
-namespace simple_note.Auth
+namespace simple_note.Modules.Auth
 {
     [Route("api/auth")]
     [ApiController]

@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
-using simple_note.Note;
+using simple_note.Modules.Note;
 
-namespace simple_note.User
+namespace simple_note.Modules.User
 {
     [Table("users")]
     public class UserEntity

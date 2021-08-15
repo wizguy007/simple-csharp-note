@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace simple_note.User
+namespace simple_note.Modules.User
 {
     public class UserRepository : IUserRepository
     {

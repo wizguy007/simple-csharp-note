@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using simple_note.Note;
-using simple_note.User;
+using simple_note.Modules.Note;
+using simple_note.Modules.User;
 
 namespace simple_note
 {

@@ -18,7 +18,7 @@ namespace simple_note.Database.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.9");
 
-            modelBuilder.Entity("simple_note.Note.NoteEntity", b =>
+            modelBuilder.Entity("simple_note.Modules.Note.NoteEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -41,7 +41,7 @@ namespace simple_note.Database.Migrations
                     b.ToTable("notes");
                 });
 
-            modelBuilder.Entity("simple_note.User.UserEntity", b =>
+            modelBuilder.Entity("simple_note.Modules.User.UserEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -68,9 +68,9 @@ namespace simple_note.Database.Migrations
                     b.ToTable("users");
                 });
 
-            modelBuilder.Entity("simple_note.Note.NoteEntity", b =>
+            modelBuilder.Entity("simple_note.Modules.Note.NoteEntity", b =>
                 {
-                    b.HasOne("simple_note.User.UserEntity", "User")
+                    b.HasOne("simple_note.Modules.User.UserEntity", "User")
                         .WithMany("Notes")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -79,7 +79,7 @@ namespace simple_note.Database.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("simple_note.User.UserEntity", b =>
+            modelBuilder.Entity("simple_note.Modules.User.UserEntity", b =>
                 {
                     b.Navigation("Notes");
                 });

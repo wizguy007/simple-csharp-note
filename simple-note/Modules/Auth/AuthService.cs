@@ -1,7 +1,7 @@
 ﻿using System;
-using simple_note.User;
+using simple_note.Modules.User;
 
-namespace simple_note.Auth
+namespace simple_note.Modules.Auth
 {
     public class AuthService
     {

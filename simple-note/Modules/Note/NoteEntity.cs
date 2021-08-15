@@ -2,9 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-using simple_note.User;
+using simple_note.Modules.User;
 
-namespace simple_note.Note
+namespace simple_note.Modules.Note
 {
     [Table("notes")]
     public class NoteEntity

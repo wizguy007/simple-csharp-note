@@ -1,5 +1,5 @@
 ﻿using System;
-namespace simple_note.User
+namespace simple_note.Modules.User
 {
     public class UserService
     {
