@@ -30,7 +30,7 @@ namespace simple_note
             services.AddCors();
 
             services.AddDbContext<SimpleTodoEntities>(
-                options => options.UseMySQL(Configuration.GetConnectionString("Default"))
+                options => options.UseMySQL(Configuration.GetConnectionString("DB"))
             );
             services.AddControllers();
 
