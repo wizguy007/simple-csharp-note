@@ -25,7 +25,7 @@ namespace simple_note.Modules.User
         [JsonIgnore]
         public string Password { get; set; }
 
-        public ICollection<NoteEntity> ?Notes { get; set; }
-
+        [JsonIgnore]
+        public virtual ICollection<NoteEntity> Notes { get; set; }
     }
 }
