@@ -17,7 +17,7 @@ namespace simple_note.Modules.Note
         {
             _entities.Notes.Add(note);
 
-            note.Id = _entities.SaveChanges();
+            _entities.SaveChanges();
 
             return note;
         }

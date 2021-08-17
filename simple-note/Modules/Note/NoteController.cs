@@ -27,7 +27,11 @@ namespace simple_note.Modules.Note
 
             var response = _noteService.GetNotes(user);
 
-            return Ok(response);
+            return Ok(new {
+                status = true,
+                message = "successful",
+                data = response.ToArray()
+            });
         }
 
         [HttpPost()]
@@ -37,7 +41,12 @@ namespace simple_note.Modules.Note
 
             var response = _noteService.CreateNote(user, dto);
 
-            return Created("success", response);
+            return Created("success", new
+            {
+                status = true,
+                message = "successful",
+                data = response
+            });
         }
 
         [HttpGet("{id}")]
@@ -47,7 +56,12 @@ namespace simple_note.Modules.Note
 
             var response = _noteService.GetNote(user, id);
 
-            return Ok(response);
+            return Ok(new
+            {
+                status = true,
+                message = "successful",
+                data = response
+            });
         }
 
         [HttpPut("{id}")]
@@ -57,7 +71,12 @@ namespace simple_note.Modules.Note
 
             var response = _noteService.UpdateNote(user, dto, id);
 
-            return Ok(response);
+            return Ok(new
+            {
+                status = true,
+                message = "successful",
+                data = response
+            });
         }
 
         [HttpDelete("{id}")]
